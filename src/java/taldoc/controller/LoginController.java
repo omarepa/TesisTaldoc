@@ -50,6 +50,7 @@ public class LoginController extends HttpServlet {
         //VALIDACION DEL USUARIO EN LA BASE DE DATOS
         if(usuario.equals("omarepa") && contra.equals("unicamente"))
         {
+            request.setAttribute("empleado", "Edgar Omar Peña de Alba");
             rd = request.getRequestDispatcher("faces/Inicio.jsp");
             rd.forward(request, response);
         }
