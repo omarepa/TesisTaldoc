@@ -22,9 +22,8 @@
             <script src="js/jquery-1.11.3.min.js"></script>
             <script src="js/menuAdmin.js"></script>
             <script src="js/menuUser.js"></script>
-            <link rel="stylesheet" href="css/plantilla.css" />
-            <link rel="stylesheet" href="css/responsivo.css" />
-            <link rel="stylesheet" href="css/menuAdmin.css" />
+            <link rel="stylesheet" type="text/css" href="css/plantilla.css" />
+            <link rel="stylesheet" type="text/css" href="css/menuAdmin.css" />
             <link rel="stylesheet" type="text/css" href="css/common.css" />
             <link rel="stylesheet" type="text/css" href="css/menuUser.css" />
         </head>
@@ -60,9 +59,12 @@
                                 <div class="ch-info">
                                     <div class="ch-info-front ch-img-1"><br/>BÍTACORA</div>
                                     <div class="ch-info-back">
-                                        <h3>En la bitácora electrónica podrás registrar los eventos realizados
+                                        <h3>
+                                            <a href="opcion?opcion=bitacora">
+                                            En la bitácora electrónica podrás registrar los eventos realizados
                                             durante el día complementado cada evento con diferentes tipos de
                                             atributos.
+                                            </a>
                                         </h3>
                                     </div>	
                                 </div>

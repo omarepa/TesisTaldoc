@@ -1,0 +1,77 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 19, 2015, 2:51:49 PM
+    Author     : edpena
+*/
+
+.accion
+{
+    padding-top: 30px;
+    width: 30%;
+    margin: 0 auto;
+} 
+
+.bitacora
+{
+    padding: 90px 90px 50px 95px;
+    background-image: url("../media/note2.png");
+    background-size: cover;
+}
+
+textarea
+{
+    opacity: 0.85;
+}
+
+table
+{
+    text-align: center;
+    margin: 0 auto;
+}
+
+fieldset { 
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove #888;
+}
+
+fieldset:hover
+{
+    legend
+    {
+        background-color: blue;
+    }
+}
+
+legend
+{
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: 12pt;
+    border-radius: 10%;
+    
+}
+
+.legendQuien
+{
+    text-align: left;
+}
+
+.legendMaterial
+{
+    text-align: center;
+}
+
+.legendSalon
+{
+    text-align: right;
+}

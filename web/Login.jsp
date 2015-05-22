@@ -13,23 +13,36 @@
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
     "http://www.w3.org/TR/html4/loose.dtd">
-
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <title>Login</title>
-        <link rel="stylesheet" href="css/plantilla.css" />
-    </head>
-    <body>
-        <form action="autentificar">
-            Usuario<input type="text" name="usuario" id="usuario"/>
-            <br/>
-            Contraseña<input type="password" name="contra" id="contra"/>
-            <br/>
-            <button type="submit">Entrar</button>
-        </form>
-        <c:if test="${requestScope.mensaje != null}">
-            <lyo:errorMsg texto="${requestScope.mensaje}" />
-        </c:if>
-    </body>
+	<head>
+            <title>. : NSTaldoc : .</title>
+            <meta name="viewport" content="width=device-width">
+            <link rel="stylesheet" type="text/css" href="css/tablaPersonalizada.css" />
+            <link rel="stylesheet" href="css/login.css" />
+            <link rel="icon" href="media/ailog.png" />
+	</head>
+	<body>
+            <section id="fondo1">
+            </section>
+            <section id="raya">
+            </section>
+            <section id="fondo2">
+            </section>
+            <form action="autentificar" class="login">
+                <article id="logoM">
+                    <img src="media/unam.png" alt="UNAM" />
+                </article>
+                <article id="logoS">
+                    <img src="media/taldoc.png" alt="SIGA" />
+                </article>
+                <input type="text" name="usuario" class="login-input" placeholder="Usuario" autofocus />
+                <input type="password" name="contra" class="login-input" placeholder="Contraseña" />
+                <input type="submit" value="ENTRAR" class="login-submit" />
+                <br/><hr/><br/>
+                <p class="login-help"><a href="#" onclick="javascript:alert('¡Pues que tonto! Preguntale a Janete o Alejandro');">¿Olvidaste tu contrase&ntilde;a?</a></p>
+                <c:if test="${requestScope.mensaje != null}">
+                    <lyo:errorMsg texto="${requestScope.mensaje}" />
+                </c:if>
+            </form>
+	</body>
 </html>

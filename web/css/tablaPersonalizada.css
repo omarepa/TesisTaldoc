@@ -1,0 +1,97 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 19, 2015, 11:36:59 AM
+    Author     : edpena
+*/
+
+
+.fancyTable td, .fancyTable th
+{
+    /* appearance */
+    border: 1px solid #9A7878;
+	
+    /* size */
+    padding: 5px;
+}
+
+.fancyTable
+{
+    width: 100%;
+    /* text */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.fancyTable tbody tr td
+{
+    /* appearance */
+    background-color: #FBF1F1;
+    background-image: -moz-linear-gradient(
+            top,
+            rgba(255,255,255,0.4) 0%,
+            rgba(255,255,255,0.2) 50%,
+            rgba(255,255,255,0.1) 51%,
+            rgba(255,255,255,0.0) 100%);
+
+    background-image: -webkit-gradient(
+            linear, left top, left bottom,
+            color-stop(0%,rgba(255,255,255,0.4)),
+            color-stop(50%,rgba(255,255,255,0.2)),
+            color-stop(51%,rgba(255,255,255,0.1)),
+            color-stop(100%,rgba(255,255,255,0.0)));
+
+    /* text */
+    color: #302626;
+    font-size: 11px;
+}
+
+.fancyTable tbody tr.odd td
+{
+    /* appearance */
+    background-color: #F0D8D8;
+    background-image: -moz-linear-gradient(
+            top,
+            rgba(255,255,255,0.4) 0%,
+            rgba(255,255,255,0.2) 50%,
+            rgba(255,255,255,0.1) 51%,
+            rgba(255,255,255,0.0) 100%);
+
+    background-image: -webkit-gradient(
+            linear, left top, left bottom,
+            color-stop(0%,rgba(255,255,255,0.4)),
+            color-stop(50%,rgba(255,255,255,0.2)),
+            color-stop(51%,rgba(255,255,255,0.1)),
+            color-stop(100%,rgba(255,255,255,0.0)));
+}
+
+.fancyTable thead tr th,
+.fancyTable thead tr td,
+.fancyTable tfoot tr th, 
+.fancyTable tfoot tr td
+{
+    /* appearance */
+    background-color: #D08D8D;
+    background-image: -moz-linear-gradient(
+            top,
+            rgba(255,255,255,0.4) 0%,
+            rgba(255,255,255,0.2) 50%,
+            rgba(255,255,255,0.1) 51%,
+            rgba(255,255,255,0.0) 100%);
+
+    background-image: -webkit-gradient(
+            linear, left top, left bottom,
+            color-stop(0%,rgba(255,255,255,0.4)),
+            color-stop(50%,rgba(255,255,255,0.2)),
+            color-stop(51%,rgba(255,255,255,0.1)),
+            color-stop(100%,rgba(255,255,255,0.0)));
+
+    /* text */
+    color: #171212;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 1px 1px #EEE7E8;
+}
+

@@ -1,0 +1,187 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 19, 2015, 11:36:20 AM
+    Author     : edpena
+*/
+
+/*=================================== container 
+*/
+
+.hexagon
+{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 60px;
+    -webkit-transform-origin: center;
+    -moz-transform-origin: center;
+    
+    -webkit-transform: scale(4.0000); /* hack Firefox smooth edge */
+    -moz-transform: scale(4.0000);
+}
+
+/*=================================== top and bottom triangle
+*/
+
+.polygon_top,
+.polygon_bottom
+{
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: width 0.3s ease-in-out, border 0.1s linear, border-radius 0.5s ease-in-out;
+}
+
+.polygon_top a,
+.polygon_bottom a
+{
+    color: rgba(55, 55, 55, 0);
+    display: block;
+    font-size: 0em;
+    text-transform: uppercase;
+    width: 100%;
+    transition: color, font-size 0.1s;
+}
+
+.polygon_top:nth-child(1),
+.polygon_top:nth-child(3),
+.polygon_bottom:nth-child(4),
+.polygon_bottom:nth-child(6)
+{
+    cursor: pointer;
+}
+
+.polygon_top:nth-child(1):hover > a,
+.polygon_top:nth-child(3):hover > a,
+.polygon_bottom:nth-child(4):hover > a,
+.polygon_bottom:nth-child(6):hover > a
+{
+    color: #373737;
+    font-size: 1em;
+}
+
+.polygon_top:nth-child(1)
+{
+    border-bottom: 30px solid #B65959;
+    right: 0;
+    -webkit-transform: translateX(-30px) translateY(-15px);
+    -moz-transform: translateX(-30px) translateY(-15px);
+}
+
+.polygon_top:nth-child(1):hover
+{
+    border-radius: 4px 0 0 4px;
+    border-left: 18px solid #B65959;
+    width: 120px;
+    z-index: 100;
+}
+.polygon_top:nth-child(1) > a
+{
+    line-height: 30px;
+}
+
+.polygon_top:nth-child(2)
+{
+    border-bottom: 30px solid #DFB5B5;
+    -webkit-transform: translateX(12px) translateY(15px);
+    -moz-transform: translateX(12px) translateY(15px);
+}
+
+.polygon_top:nth-child(3)
+{
+    border-bottom: 30px solid #C87E7E;
+    left: 0;
+    -webkit-transform: translateX(30px) translateY(-15px);
+    -moz-transform: translateX(30px) translateY(-15px);
+}
+
+.polygon_top:nth-child(3):hover
+{
+    border-radius: 0 4px 4px 0;
+    border-right: 18px solid #C87E7E;
+    width: 120px;
+    z-index: 100;
+}
+
+.polygon_top:nth-child(3) > a
+{
+    text-align: right;
+    line-height: 30px;
+}
+
+.polygon_bottom:nth-child(4)
+{
+    border-top: 30px solid #E6C4C4;
+    right: 0;
+    -webkit-transform: translateX(-30px) translateY(15px);
+    -moz-transform: translateX(-30px) translateY(15px);
+}
+
+.polygon_bottom:nth-child(4):hover
+{
+    border-radius: 4px 0 0 4px;
+    border-left: 18px solid #E6C4C4;
+    width: 120px;
+    z-index: 100;
+}
+
+.polygon_bottom:nth-child(4) > a
+{
+    text-align: left;
+    line-height: 30px;
+    margin-top: -30px;
+}
+
+.polygon_bottom:nth-child(5)
+{
+    border-top: 30px solid #C06C6C;
+    -webkit-transform: translateX(12px) translateY(-15px);
+    -moz-transform:translateX(12px) translateY(-15px);
+}
+
+.polygon_bottom:nth-child(6)
+{
+    border-top: 30px solid #D7A1A1;
+    -webkit-transform: translateX(30px) translateY(15px);
+    -moz-transform: translateX(30px) translateY(15px);
+}
+
+.polygon_bottom:nth-child(6):hover
+{
+    border-radius: 0 4px 4px 0;
+    border-right: 18px solid #D7A1A1;
+    width: 120px;
+    z-index: 100;
+}
+
+.polygon_bottom:nth-child(6) > a
+{
+    text-align: right;
+    line-height: 30px;
+    margin-top: -30px;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li
+{
+    list-style-type: none;
+}

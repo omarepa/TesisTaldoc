@@ -13,6 +13,10 @@
         <servlet-name>LoginController</servlet-name>
         <servlet-class>taldoc.controller.LoginController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>InicioController</servlet-name>
+        <servlet-class>taldoc.controller.InicioController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>/faces/*</url-pattern>
@@ -20,6 +24,10 @@
     <servlet-mapping>
         <servlet-name>LoginController</servlet-name>
         <url-pattern>/autentificar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InicioController</servlet-name>
+        <url-pattern>/opcion</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

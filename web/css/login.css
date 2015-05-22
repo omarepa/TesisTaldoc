@@ -1,0 +1,324 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+hr
+{
+	opacity: 0.5;
+	border: 1px dashed #C05656;
+	border-radius: 50px;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  background-image: url("../media/bg.png");
+}
+
+::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+:-moz-placeholder {
+  color: #C8BCBC !important;
+}
+
+::-webkit-input-placeholder {
+  color: #C8BCBC;
+}
+
+:-ms-input-placeholder {
+  color: #C8BCBC !important;
+}
+
+body
+{
+	font: 12px/20px 'Century Gothic';
+	color: #404040;
+	background-color: #DF9E9E;
+	background-image: -webkit-radial-gradient(center, #FFFFFF, #DF9E9E);
+	background-image: -moz-radial-gradient(center, #FFFFFF, #DF9E9E);
+	background-image: -o-radial-gradient(center, #FFFFFF, #DF9E9E);
+	background-image: radial-gradient(center, #FFFFFF, #DF9E9E);
+}
+
+#fondo1
+{
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 48%;
+	background-image: url('../media/unam2.png');
+	background-repeat: repeat-x;
+	z-index: -20;
+	opacity: 0.5;
+}
+
+#fondo1:hover
+{
+	opacity: 0.8;
+}
+
+#raya
+{
+	position: absolute;
+	top: 48%;
+	left:0;
+	width: 100%;
+	height: 4%;
+	background-image: url('../media/linea.png');
+	background-repeat: repeat-x;
+	z-index: -20;
+}
+
+#fondo2
+{
+    position: absolute;
+    top: 52%;
+    left:0;
+    width: 100%;
+    height: 48%;
+    /*
+    background-image: url('../media/auditoria2.png');
+    background-repeat: repeat-x;
+    */
+    z-index: -20;
+    opacity: 0.5;
+}
+
+#fondo2:hover
+{
+    opacity:0.8;
+}
+
+input, textarea, select, label, button
+{
+    font-family: inherit;
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#logoM
+{
+	margin: 0;
+	padding: 4px 4px 4px 4px;
+	width: 65px;
+	border-radius: 100px;
+	height: 65px;
+	background-color: #780000;
+	/*
+	background-color: #DFD99E;
+	background-image: -webkit-radial-gradient(center, #FFFFFF, #DFD99E);
+	background-image: -moz-radial-gradient(center, #FFFFFF, #DFD99E);
+	background-image: -o-radial-gradient(center, #FFFFFF, #DFD99E);
+	background-image: radial-gradient(center, #FFFFFF, #DFD99E);
+	*/
+	position: relative;
+	top: 0px;
+}
+
+#logoM img
+{
+	padding: 5px;
+	background-color: #A92222;
+	width: 55px;
+	height: 55px;
+	border-radius: 100px;
+	margin: auto;
+	display: block;
+}
+
+#logoS
+{
+	float: right;
+	position: relative;
+	top: -40px;
+}
+
+#logoS img
+{
+	width: 70px;
+	height: 25px;
+}
+
+.login
+{
+	opacity: 0.8;
+	margin: 15% auto;
+	padding: 20px 20px 20px 20px;
+	width: 300px;
+	background: #A92222;
+	background-clip: padding-box;
+	border: 1px solid #501717;
+	border-bottom-color: #481414;
+	border-radius: 50px;
+	background-image: -webkit-radial-gradient(cover, #D74343, #A92222);
+	background-image: -moz-radial-gradient(cover, #D74343, #A92222);
+	background-image: -o-radial-gradient(cover, #D74343, #A92222);
+	background-image: radial-gradient(cover, #D74343, #A92222);
+	-webkit-box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow:    0px 4px 1px 0px rgba(0, 0, 0, 0.8);
+	box-shadow:         0px 4px 1px 0px rgba(0, 0, 0, 0.8);
+	
+	-webkit-animation: move 3s ease-in-out infinite;
+	-moz-animation: move 3s ease-in-out infinite;
+	-ms-animation: move 3s ease-in-out infinite;
+	-o-animation: move 3s ease-in-out infinite;
+	animation: move 3s ease-in-out infinite;
+}
+
+.login:hover, .login-input:focus
+{
+	opacity: 1;
+	-webkit-animation-play-state:paused;
+	-moz-animation-play-state:paused;
+	-ms-animation-play-state:paused;
+	-o-animation-play-state:paused;
+	animation-play-state:paused;
+}
+
+omar
+{
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  height: 37px;
+  margin-bottom: 20px;
+  padding: 0 9px;
+  color: white;
+  font-size: 14px;
+  text-shadow: 0 1px black;
+  background: #780000;
+  border: 1px solid #3B1515;
+  border-top-color: #260D0D;
+  border-radius: 25px;
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0));
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0));
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0));
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.2);
+}
+.login-input:focus {
+  outline: 0;
+  background-color: #C05656;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 4px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3), 0 0 4px 1px rgba(255, 255, 255, 0.6);
+}
+.lt-ie9 .login-input {
+  line-height: 35px;
+}
+
+.login-submit
+{
+	display: block;
+	width: 120px;
+	height: 40px;
+	margin: 0 auto;
+	/*para el link de : si olvido la contraseña*/
+	margin-bottom: 5px;
+	font-size: 14px;
+	color: #9A3D3D;
+	text-align: center;
+	text-shadow: 0 1px rgba(255, 255, 255, 0.3);
+	background: #780000;
+	background-clip: padding-box;
+	border: 1px solid #000000;
+	border-radius: 50px;
+	cursor: pointer;
+	background-image: -webkit-linear-gradient(center, #d0e1fe, #003F77);
+	background-image: -moz-linear-gradient(center, #d0e1fe, #003F77);
+	background-image: -o-linear-gradient(center, #d0e1fe, #003F77);
+	background-image: linear-gradient(center, #d0e1fe, #003F77);
+	  
+	-webkit-box-shadow: 0px 4px 1px 0px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 4px 1px 0px rgba(0, 0, 0, 1);
+	box-shadow:         0px 4px 1px 0px rgba(0, 0, 0, 1);
+
+}
+.login-submit:active {
+  background: #C05656;
+  -webkit-box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.4), 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.login-help {
+  text-align: center;
+}
+.login-help > a {
+  font-size: 11px;
+  color: #F0D6D6;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.4);
+}
+.login-help > a:hover {
+  text-decoration: underline;
+}
+
+table
+{
+	width: 100%;
+}
+
+.logo
+{
+	width: 70px;
+	height: 70px;
+	text-align: left;
+}
+
+.leyenda
+{
+	text-align: right;
+	vertical-align: middle;
+}
+
+@-webkit-keyframes move{
+	0%,100%
+	{
+		-webkit-transform:translatey(-10px);
+	}
+	50%%
+	{
+		-webkit-transform:translatey(0);
+	}
+}
+@-moz-keyframes move{
+  0%,100%{-moz-transform:translatey(-10px);}
+  50%%{-moz-transform:translatey(0);}
+}
+@-ms-keyframes move{
+  0%,100%{-ms-transform:translatey(-10px);}
+  50%%{-ms-transform:translatey(0);}
+}
+@-o-keyframes move{
+  0%,100%{-o-transform:translatey(-10px);}
+  50%%{-o-transform:translatey(0);}
+}
+@keyframes move{
+  0%,100%{transform:translatey(-10px);}
+  50%%{transform:translatey(0);}
+}
